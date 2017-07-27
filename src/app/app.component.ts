@@ -33,7 +33,7 @@ public rootPage: any ;
 
 const Unsubscribe = firebase.auth().onAuthStateChanged((user) => {
    if(!user){
-     this.rootPage = LoginPage;
+     this.rootPage = TabsPage;
      Unsubscribe();
    }
    else {
